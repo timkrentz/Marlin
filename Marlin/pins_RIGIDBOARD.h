@@ -46,6 +46,7 @@
 // Steppers
 //
 // RigidBot swaps E0 / E1 plugs vs RAMPS 1.3
+// NOTE: E0 is Extruder B, E1 is Extruder A
 #undef E0_STEP_PIN
 #undef E0_DIR_PIN
 #undef E0_ENABLE_PIN
@@ -84,7 +85,7 @@
 // Heaters / Fans
 //
 #undef HEATER_BED_PIN
-#define HEATER_BED_PIN     10
+#define HEATER_BED_PIN     10   // Digital, MOSFET for bed heating
 
 #ifndef FAN_PIN
   #define FAN_PIN           8   // Same as RAMPS_13_EEF
